@@ -3,10 +3,10 @@ name: Careful coding with copilots
 id: careful_coding_with_copilots
 dependsOn: [introductory_courses.python]
 files: [
-   introduction.md,
-   calibration.md,
-   fluorescence_extraction.md,
-   ode_simulation_and_inference.md]
+   00_introduction.md,
+   01_calibration.md,
+   02_fluorescence_extraction.md,
+   03_ode_simulation_and_inference.md]
 learningOutcomes:
   - Decompose a complex programming problem into sub-problems
   - Apply systematic debugging strategies to LLM-generated code
