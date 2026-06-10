@@ -1,6 +1,6 @@
 ---
 name: Introduction
-dependsOn: [c]
+dependsOn: [ai_tooling.careful_coding_with_copilots]
 tags: [genai, coding, debugging, python]
 learningOutcomes:
   - Understand the structure and goals of the Repressilator analysis project
