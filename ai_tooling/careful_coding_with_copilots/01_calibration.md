@@ -1,6 +1,6 @@
 ---
 name: Calibration
-dependsOn: [GenAI_coding.Repressilator_analysis.introduction]
+dependsOn: [ai_tooling.careful_coding_with_copilots.00_introduction]
 tags: [genai]
 learningOutcomes:
   - Debug LLM-generated calibration code
@@ -38,16 +38,16 @@ A description of how the calibration experiments were conducted can be found in 
 
 ## The test function
 
-### `calibration.ProteinCalibration.pixel_intensities_to_molecules()`
+**`calibration.ProteinCalibration.pixel_intensities_to_molecules()`**
 
 - **Arguments:** A pixel value (or an average of a number of pixel values)
 - **Returns:** The number of protein molecules
 
 ## Debugging
 
-### AssertionError `assert np.mean(np.abs(calculated_molecules-true_amounts))<170`
+**AssertionError `assert np.mean(np.abs(calculated_molecules-true_amounts))<170`**
 
-::::challenge{id=what_code_does_cal title=What does the code do?}
+::::challenge{id=what_code_does_cal title="What does the code do?"}
 Examine `pixel_intensities_to_molecules()` method and identify what transformations are made to go from pixel value to protein numbers.
 
 :::solution
@@ -61,7 +61,7 @@ Examine `pixel_intensities_to_molecules()` method and identify what transformati
 :::
 ::::
 
-::::challenge{id=error_source_cal title=What is the source of the error?}
+::::challenge{id=error_source_cal title="What is the source of the error?"}
 We need to determine where has the sequence of transformations in steps 1-5 in the solution above gone wrong.
 Plot the calibration data in the `docs/{protein_name}_calibration.txt` files.
 

@@ -1,6 +1,6 @@
 ---
 name: ODE Simulation and Inference
-dependsOn: [GenAI_coding.Repressilator_analysis.introduction, GenAI_coding.Repressilator_analysis.calibration]
+dependsOn: [ai_tooling.careful_coding_with_copilots.02_fluorescence_extraction]
 tags: [genai, inference, ordinary differential equations]
 learningOutcomes:
   - Debug LLM-generated ODE simulation code

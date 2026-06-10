@@ -1,6 +1,6 @@
 ---
 name: Introduction
-dependsOn: []
+dependsOn: [c]
 tags: [genai, coding, debugging, python]
 learningOutcomes:
   - Understand the structure and goals of the Repressilator analysis project

@@ -1,6 +1,6 @@
 ---
 name: Fluorescence Extraction
-dependsOn: [GenAI_coding.Repressilator_analysis.introduction]
+dependsOn: [ai_tooling.careful_coding_with_copilots.01_calibration]
 tags: [genai, image-processing]
 learningOutcomes:
   - Debug LLM-generated image processing and cell segmentation code
