@@ -140,7 +140,7 @@ The image analysis, ODE inference and simulation and calibration modules each ha
 The more time you spend trying to fix the code, as opposed to just copying and pasting the solutions, the more useful this exercise will be.
 
 I'd suggest starting with Image analysis, then ODE Simulation, then Calibration.
-These are independent modules, so you could do them in any order, but the image analysis is the easiest to debug.
+These are independent modules, so you could do them in any order, but the image analysis has clear visual failiure modes and so is easier to debug.
 Once these three have been completed, Pipeline integrates them.
 
 
