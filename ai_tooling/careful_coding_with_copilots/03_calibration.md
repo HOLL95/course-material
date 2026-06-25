@@ -165,6 +165,7 @@ we can then use these values in `pixel_intensities_to_molecules()`
 ```python nolint
 mass_ng = ((pixel_intensities - self.intercept) / self.slope) / CONVERSION_FACTOR
 ```
+
 :::
 ::::
 

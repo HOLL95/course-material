@@ -108,7 +108,7 @@ Combine the three modules together to estimate model parameters for a subset of 
 
 The structure of the Repressilator_analysis directory is as follows:
 
-```
+```text
 ├── docs/                      
 ├── images/                      
 │   ├── intensity/
@@ -128,13 +128,12 @@ The structure of the Repressilator_analysis directory is as follows:
     └── testdata/
 ```
 
-The two most important directories are `tests` and `repressilator_analysis`. In `repressilator_analysis`, all the three tasks are associated with a `.py` file, and contain functions designed to undertake the analysis tasks detailed above. 
-In the `tests` folder, these functions are assessed for correctness. What this means is that the functions (in `repressilator_analysis`) are imported, given some data, and the resulting output analysed. If the output is correct, then the tests pass, otherwise they fail. 
+The two most important directories are `tests` and `repressilator_analysis`. In `repressilator_analysis`, all the three tasks are associated with a `.py` file, and contain functions designed to undertake the analysis tasks detailed above.
+In the `tests` folder, these functions are assessed for correctness. What this means is that the functions (in `repressilator_analysis`) are imported, given some data, and the resulting output analysed. If the output is correct, then the tests pass, otherwise they fail.
 
-You need to **edit the code in `repressilator_analysis`** with the aim of getting the tests in `tests` to pass. You may rewrite the code in `repressilator_analysis` as much as you like (and are encouraged to!). 
-You may also edit the code in `tests`, but only for either a) diagnostic code (plotting and printing) or b) if you modify the data structures returned by the `repressilator_analysis` functions. 
+You need to **edit the code in `repressilator_analysis`** with the aim of getting the tests in `tests` to pass. You may rewrite the code in `repressilator_analysis` as much as you like (and are encouraged to!).
+You may also edit the code in `tests`, but only for either a) diagnostic code (plotting and printing) or b) if you modify the data structures returned by the `repressilator_analysis` functions.
 In the latter case, you will need to rewrite the tests so that they can still check the correctness of the code, but the logic shouldn't change, only the processing of the outputs.
-
 
 The image analysis, ODE inference and simulation and calibration modules each have a full "walkthrough" if you get stuck, but this represents only one approach; other solutions are of course possible.
 The more time you spend trying to fix the code, as opposed to just copying and pasting the solutions, the more useful this exercise will be.
@@ -142,7 +141,6 @@ The more time you spend trying to fix the code, as opposed to just copying and p
 I'd suggest starting with Image analysis, then ODE Simulation, then Calibration.
 These are independent modules, so you could do them in any order, but the image analysis has clear visual failiure modes and so is easier to debug.
 Once these three have been completed, Pipeline integrates them.
-
 
 ## Notes on using LLMs
 
@@ -180,6 +178,7 @@ In your terminal (Linux/Mac), or `cmd`/Git Bash on Windows, run
 ```bash
 git clone https://github.com/<Your Gihub Username>/Repressilator_analysis
 ```
+
 ### Unix command line (Linux/Mac)
 
 Setup a virtual environment and activate it
@@ -188,7 +187,7 @@ Setup a virtual environment and activate it
 python -m venv <path/to/env>
 ```
 
-then activate it 
+then activate it
 
 ```bash
 source </path/to/env>/bin/activate
@@ -203,7 +202,7 @@ python -m pip install -e .
 ### VSCode only
 
 1. Install the Python extension and your copilot of choice (at the time of writing, the University of Oxford grants staff and students access to Codex, with an allowance of ~30 messages per day) from the extensions tab.
-2. Open the `Repressilator_analysis` folder using VSCode. 
+2. Open the `Repressilator_analysis` folder using VSCode.
 3. Create a virtual environment using the command palette (`Ctrl+Shift+P` → `Python:Create Environment` → `Quick create`, or manually manage it with `venv` if you want to)
 4. Open a terminal (accessed through the `terminal` menu) and run `python -m pip install -e .` in the top level of the `Repressilator_analysis` directory
 
